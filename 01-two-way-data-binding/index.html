@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<!-- HEAD -->
+<head>
+	<meta charset="UTF-8">
+	<title>Two Way Data Binding</title>
+</head>
+
+<!-- BODY -->
+<body ng-controller="AppCtrl">
+	<h1>USER</h1>
+	<p>Name: {{user.name}}</p>
+	<p>Age: {{user.age}}</p>
+	<p>Email: {{user.email}}</p>
+	<input type="text" ng-model="user.name" placeholder="NAME">
+	<input type="text" ng-model="user.age" placeholder="AGE">
+	<input type="email" ng-model="user.email" placeholder="EMAIL">
+	
+	<h1>USERS</h1>
+	<div ng-repeat='user in users'>
+		<hr>
+		<p>Name: {{user.name}}</p>
+		<p>Age: {{user.age}}</p>
+		<p>Email: {{user.email}}</p>
+	</div>
+</body>
+
+<!-- LIBS -->
+<script src="node_modules/angular/angular.min.js"></script>
+
+<!-- APP -->
+<script src="app.js"></script>
+
+</html>
