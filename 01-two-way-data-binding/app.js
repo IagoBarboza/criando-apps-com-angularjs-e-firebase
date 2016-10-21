@@ -14,10 +14,10 @@ angular.module('app', [])
 
 		// ADDING USERS-ARRAY ON $SCOPE(MODEL) 
 		// MAKING VISIBLE TO HTML
-		$scope.users = [
-			{name: "Iago Barboza", age: 24, email: "iagobarboza@gmail.com"},
-			{name: "Fulano", age: 20, email: "fulano@gmail.com"},
-			{name: "Zezinho", age: 15, email: "zezionho@gmail.com"}						
-		];
+		// $scope.users = [
+		// 	{name: "Iago Barboza", age: 24, email: "iagobarboza@gmail.com"},
+		// 	{name: "Fulano", age: 20, email: "fulano@gmail.com"},
+		// 	{name: "Zezinho", age: 15, email: "zezionho@gmail.com"}						
+		// ];
 
 	}])

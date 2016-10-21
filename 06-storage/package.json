@@ -1,0 +1,21 @@
+{
+  "name": "ngfire-webapp",
+  "version": "0.0.1",
+  "description": "Template for a web spa using angularjs and firebase",
+  "repository": {
+    "type": "git",
+    "url": "https://iagobarboza@bitbucket.org/iagobarboza/"
+  },
+  "author": "iagobarboza",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-material": "^1.1.0-rc.5",
+    "angular-route": "^1.5.7",
+    "angularfire": "^2.0.1",
+    "angularjs": "0.0.1",
+    "firebase": "^3.2.0",
+    "ng-file-model": "0.0.5"
+  }
+}

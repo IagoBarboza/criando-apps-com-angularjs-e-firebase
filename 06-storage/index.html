@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<!-- HEAD -->
+<head>
+	<meta charset="UTF-8">
+	<title>Storage</title>
+</head>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+
+<!-- FIREBASE APP CONNECTION -->
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBnT0rr24NwIYf4_3bd1cA42R9J9_XLb_8",
+		authDomain: "myapp-9169f.firebaseapp.com",
+		databaseURL: "https://myapp-9169f.firebaseio.com",
+		storageBucket: "myapp-9169f.appspot.com",
+		messagingSenderId: "298579300814"
+	};
+	firebase.initializeApp(config);
+</script>
+
+<!-- ANGULAR -->
+<script src="node_modules/angular/angular.min.js"></script>
+
+<!-- ANGULAR FIRE -->
+<script src="node_modules/angularfire/dist/angularfire.min.js"></script>
+
+<!-- APP -->
+<script src="app.js"></script>
+
+<!-- BODY -->
+<body ng-controller="AppCtrl">
+	<!-- FILE INPUT -->
+    <input type="file" onchange="angular.element(this).scope().setFile(this)">
+	<!-- UPLOAD BUTTON -->
+	<button ng-click="upload()">UPLOAD</button>
+</body>
+
+</html>
