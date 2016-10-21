@@ -26,7 +26,7 @@ angular.module('app', [])
 		}
 
 		$scope.upload = function(){
-			var uploadTask = storageRef.child($scope.file.name).put($scope.file, metadata);
+			var uploadTask = storageRef.child().put($scope.file, metadata);
 			uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,
 				// UPLOAD RUNNING
 				function(snapshot) {
